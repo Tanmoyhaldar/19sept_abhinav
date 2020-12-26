@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: chocolate;
+        }
+        table{
+            background-color: black;
+            margin-top: 50px;
+            margin-left: 500px;
+        }
+        #a-1,#a-2,#a-3,#a-4,#a-5{
+            height: 100px;
+            width: 100px;
+            border: 3px solid black;
+            border-radius: 5px;
+            background-color: red;
+        }
+        #b-1,#b-2,#b-3,#b-4,#b-5{
+            height: 100px;
+            width: 100px;
+            border: 3px solid black;
+            border-radius: 5px;
+            background-color: blue;
+        }
+        #c-1,#c-2,#c-3,#c-4,#c-5{
+            height: 100px;
+            width: 100px;
+            border: 3px solid black;
+            border-radius: 5px;
+            background-color: green;
+        }
+        #d-1,#d-2,#d-3,#d-4,#d-5{
+            height: 100px;
+            width: 100px;
+            border: 3px solid black;
+            border-radius: 5px;
+            background-color: brown;
+        }
+        #e-1,#e-2,#e-3,#e-4,#e-5{
+            height: 100px;
+            width: 100px;
+            border: 3px solid black;
+            border-radius: 5px;
+            background-color: gray;
+        }
+        h1{
+            font-size: 45px;
+            color: indigo;
+            font-family: cursive;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Play With Boxes</h1>
+    <table>
+        <tr onclick="firstRow()">
+            <td><div id="a-1" onclick="firstRow()" ondblclick="firstRowBack()" onmousedown="sound1.play()"></div></td>
+            <td><div id="a-2" onclick="firstRow()" ondblclick="firstRowBack()" onmousedown="sound2.play()"></div></td>
+            <td><div id="a-3" onclick="firstRow()" ondblclick="firstRowBack()"></div></td>
+            <td><div id="a-4" onclick="firstRow()" ondblclick="firstRowBack()"></div></td>
+            <td><div id="a-5" onclick="firstRow()" ondblclick="firstRowBack()"></div></td>
+        </tr>
+        <tr>
+            <td><div id="b-1"></div></td>
+            <td><div id="b-2"></div></td>
+            <td><div id="b-3"></div></td>
+            <td><div id="b-4"></div></td>
+            <td><div id="b-5"></div></td>
+        </tr>
+        <tr>
+            <td><div id="c-1"></div></td>
+            <td><div id="c-2"></div></td>
+            <td><div id="c-3"></div></td>
+            <td><div id="c-4"></div></td>
+            <td><div id="c-5"></div></td>
+        </tr>
+        <tr>
+            <td><div id="d-1"></div></td>
+            <td><div id="d-2"></div></td>
+            <td><div id="d-3"></div></td>
+            <td><div id="d-4"></div></td>
+            <td><div id="d-5"></div></td>
+        </tr>
+        <tr>
+            <td><div id="e-1"></div></td>
+            <td><div id="e-2"></div></td>
+            <td><div id="e-3"></div></td>
+            <td><div id="e-4"></div></td>
+            <td><div id="e-5"></div></td>
+        </tr>
+    </table>
+    <script>
+        /*
+        1. Clicking the first row will modify the color of all other rows
+          2nd row- violet
+          3rd row - brown
+          4th row - gray
+          5th row - green
+        .
+        .
+        .
+        2. Double click will give the previous colors of the div back.
+        */
+       function firstRow(){
+           document.getElementById("b-1").style.background = "orange";
+           document.getElementById("b-2").style.background = "orange";
+           document.getElementById("b-3").style.background = "orange";
+           document.getElementById("b-4").style.background = "orange";
+           document.getElementById("b-5").style.background = "orange";
+           document.getElementById("c-1").style.background = "brown";
+           document.getElementById("c-2").style.background = "brown";
+           document.getElementById("c-3").style.background = "brown";
+           document.getElementById("c-4").style.background = "brown";
+           document.getElementById("c-5").style.background = "brown";
+           document.getElementById("d-1").style.background = "gray";
+           document.getElementById("d-2").style.background = "gray";
+           document.getElementById("d-3").style.background = "gray";
+           document.getElementById("d-4").style.background = "gray";
+           document.getElementById("d-5").style.background = "gray";
+           document.getElementById("e-1").style.background = "green";
+           document.getElementById("e-2").style.background = "green";
+           document.getElementById("e-3").style.background = "green";
+           document.getElementById("e-4").style.background = "green";
+           document.getElementById("e-5").style.background = "green";
+       }
+       function secondRow(){
+
+       }
+       function thirdRow(){
+
+       }
+       function fourthRow(){
+
+       }
+       function fifthRow(){
+
+       }
+       function firstRowBack(){
+           document.getElementById("b-1").style.background = "blue";
+           document.getElementById("b-2").style.background = "blue";
+           document.getElementById("b-3").style.background = "blue";
+           document.getElementById("b-4").style.background = "blue";
+           document.getElementById("b-5").style.background = "blue";
+           document.getElementById("c-1").style.background = "green";
+           document.getElementById("c-2").style.background = "green";
+           document.getElementById("c-3").style.background = "green";
+           document.getElementById("c-4").style.background = "green";
+           document.getElementById("c-5").style.background = "green";
+           document.getElementById("d-1").style.background = "brown";
+           document.getElementById("d-2").style.background = "brown";
+           document.getElementById("d-3").style.background = "brown";
+           document.getElementById("d-4").style.background = "brown";
+           document.getElementById("d-5").style.background = "brown";
+           document.getElementById("e-1").style.background = "gray";
+           document.getElementById("e-2").style.background = "gray";
+           document.getElementById("e-3").style.background = "gray";
+           document.getElementById("e-4").style.background = "gray";
+           document.getElementById("e-5").style.background = "gray";
+       }
+       function secondRowBack(){
+
+       }
+       function thirdRowBack(){
+
+       }
+       function fourthRowBack(){
+
+       }
+       function fifthRowBack(){
+
+       }
+       var sound1 = new Audio;
+       var sound2 = new Audio;
+       sound1.src = "Wood Plank Flicks.mp3";
+       sound2.src = "Instrument Strum.mp3";
+    </script>
+</body>
+</html>
